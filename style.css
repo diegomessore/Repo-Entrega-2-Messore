@@ -232,6 +232,7 @@ h1 {
 .about__title {
     font-size: 2rem;
     margin-bottom: 16px;
+    color: #ec710c;
 }
 
 .about__paragraph {
@@ -300,13 +301,14 @@ article.card {
 .contacto {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    margin: 0 auto;
+    width: 600px;
+    margin: auto;
     padding: 2rem;
     font-size: 1rem;
     margin-bottom: 14px;
     margin-right: 1rem 1rem 1rem 0;
     border-radius: 50%;
+
 }
 
 .footer {
@@ -318,11 +320,53 @@ article.card {
     align-items: center;
 }
 
-@media (max-width: 1400px)    {
-header{
+@media (max-width: 1000px)    {
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100px;
+    width: auto;
+    padding: 10px 10%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .nav-links{
     padding: 10px 0px;
 }
+}
+
+@media (max-width: 800px)    {
+header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+.about {
+    margin: 80px auto;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    align-items: center;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    padding: 2rem;
+    font-size: 1rem;
+    margin-bottom: 14px;
+    margin-right: 1rem 1rem 1rem 0;
+    border-radius: 50%;
+}
+
+.nav-links{
+    padding: 10px 0px;
+}
+
 }

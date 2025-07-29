@@ -4,11 +4,14 @@ body {
 
     }
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: white;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 140px;
+    height: 100px;
     padding: 0px 10%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
@@ -20,8 +23,8 @@ header {
 
 .header .logo img {
     height: 50px;
-    width: auto;
     transition: all 0.3s ease;
+    max-width: min-content;
 }
 
 .header .logo img:hover {
@@ -41,7 +44,7 @@ header {
     transform: scale(1.05);
 }
 .header .nav-links a {
-    color: #000;
+    color: #ec710c;
     text-decoration: none;
     font-size: 100;
 }
@@ -66,6 +69,16 @@ header {
     background-color: orange;
     color: #6c4f4f;
     transform: scale(1.1);
+}
+
+.btn-btn-primary {
+    background-color: orange;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .header
@@ -260,4 +273,39 @@ article.card {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1rem;
+    margin-bottom: 14px;
+    margin-right: 1rem 1rem 1rem 0;
+    border-radius: 50%;
+}
+
+@media (max-width: 1400px)    {
+body{}
+}
+
+@media (min-width: 1400px)    {
+body{}
+}
+
+@media (min-width: 1000px)    {
+body{}
+}
+
+@media (min-width: 800px)    {
+body{}
+}
+
+@media (min-width: 600px)    {
+body{}
+}
+
+@media (min-width: 400px)    {
+body{}
 }
